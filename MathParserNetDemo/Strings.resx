@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Pacman" xml:space="preserve">
+    <value>&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;base href="http://www.google.com" /&gt;&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;&lt;title&gt;Google&lt;/title&gt;&lt;style&gt;body{margin:0}#gog{padding:3px 8px 0}td{line-height:.8em}.gac_m td{line-height:17px}form{margin-bottom:20px}body,td,a,p,.h{font-family:arial,sans-serif}.h{color:#36c;font-size:20px}.q{color:#00c}.ts td{padding:0}.ts{border-collapse:collapse}em{font-style:normal;font-weight:bold}.lst{border:1px solid #ccc;border-bottom-color:#999;border-right-color:#999;font:18px arial,sans-serif bold;height:25px;margin:0;padding:5px 8px 0 6px;vertical-align:top;width:496px}input{font-family:inherit}a.gb1,a.gb2,a.gb3,a.gb4{color:#11c !important}#gog{background:#fff}#gbar,#guser{font-size:13px;padding-top:1px !important}#gbar{float:left;height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}#gbs,.gbm{background:#fff;left:0;position:absolute;text-align:left;visibility:hidden;z-index:1000}.gbm{border:1px solid;border-color:#c9d7f1 #36c #36c #a2bae7;z-index:1001}.gb1{margin-right:.5em}.gb1,.gb3{zoom:1}.gb2{display:block;padding:.2em .5em}.gb2,.gb3{border-bottom:none;text-decoration:none}a.gb1,a.gb2,a.gb3,a.gb4{color:#00c !important}a.gb2:hover{background:#36c;color:#fff !important}body{background:#fff;color:black}input{-moz-box-sizing:content-box}a{color:#11c;text-decoration:none}a:hover,a:active{text-decoration:underline}.fl a{color:#4272db}a:visited{color:#551a8b}a.gb1,a.gb4{text-decoration:underline}a.gb3:hover{text-decoration:none}#ghead a.gb2:hover{color:#fff!important}.ds{border-bottom:solid 1px #e7e7e7;border-right:solid 1px #e7e7e7;display:-moz-inline-box;display:inline-block;height:32px;margin:3px}.sblc{padding-top:5px}.sblc a{display:block;font-size:11px;margin:2px 0 2px 13px}.lsbb{background:#eee;border:solid 1px;border-color:#ccc #999 #999 #ccc;display:inline-block;height:30px}.lsb{background:url(/images/srpr/nav_logo13.png) bottom;border:none;cursor:pointer;font:15px arial,sans-serif;height:30px;margin:0;outline:0;vertical-align:top}.lsb:active{background:#ccc}.lst:focus{outline:none}.ftl,#fll a{margin:0 12px}#addlang a{padding:0 3px}.gac_v div{display:none}.gac_v .gac_v2,.gac_bt{display:block!important}#logo{background:black url(http://www.google.com/logos/pacman10-hp.png) 0 0 no-repeat;height:186px;margin-bottom:9px;position:relative;width:554px}#logo-l{background:#990;display:none;height:2px;left:177px;overflow:hidden;position:absolute;top:157px;width:200px}#logo-b{background:#ff0;height:8px;left:0;position:absolute;width:0}&lt;/style&gt;&lt;/head&gt;&lt;body bgcolor=#f0f0f0 text=#000000 link=#0000cc vlink=#551a8b alink=#ff0000&gt;&lt;span id=main&gt;&lt;div id=ghead style="visibility: hidden"&gt;&lt;div id=gog&gt;&lt;div style="visibility:hidden" id=gbar&gt;&lt;nobr&gt;&lt;b class=gb1&gt;Web&lt;/b&gt; &lt;a href="http://www.google.com/imghp?hl=en&amp;tab=wi" onclick=gbar.qs(this) class=gb1&gt;Images&lt;/a&gt; &lt;a href="http://video.google.com/?hl=en&amp;tab=wv" onclick=gbar.qs(this) class=gb1&gt;Videos&lt;/a&gt; &lt;a href="http://maps.google.com/maps?hl=en&amp;tab=wl" onclick=gbar.qs(this) class=gb1&gt;Maps&lt;/a&gt; &lt;a href="http://news.google.com/nwshp?hl=en&amp;tab=wn" onclick=gbar.qs(this) class=gb1&gt;News&lt;/a&gt; &lt;a href="http://www.google.com/prdhp?hl=en&amp;tab=wf" onclick=gbar.qs(this) class=gb1&gt;Shopping&lt;/a&gt; &lt;a href="http://mail.google.com/mail/?hl=en&amp;tab=wm" class=gb1&gt;Gmail&lt;/a&gt; &lt;a href="http://www.google.com/intl/en/options/" onclick="this.blur();gbar.tg(event);return !1" aria-haspopup=true class=gb3&gt;&lt;u&gt;more&lt;/u&gt;&amp;nbsp;&lt;small&gt;&amp;#9660;&lt;/small&gt;&lt;/a&gt;&lt;div class=gbm id=gbi&gt;&lt;a href="http://books.google.com/bkshp?hl=en&amp;tab=wp" onclick=gbar.qs(this) class=gb2&gt;Books&lt;/a&gt; &lt;a href="http://www.google.com/finance?hl=en&amp;tab=we" onclick=gbar.qs(this) class=gb2&gt;Finance&lt;/a&gt; &lt;a href="http://translate.google.com/?hl=en&amp;tab=wT" onclick=gbar.qs(this) class=gb2&gt;Translate&lt;/a&gt; &lt;a href="http://scholar.google.com/schhp?hl=en&amp;tab=ws" onclick=gbar.qs(this) class=gb2&gt;Scholar&lt;/a&gt; &lt;a href="http://blogsearch.google.com/?hl=en&amp;tab=wb" onclick=gbar.qs(this) class=gb2&gt;Blogs&lt;/a&gt; &lt;div class=gb2&gt;&lt;div class=gbd&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href="http://www.youtube.com/?hl=en&amp;tab=w1" onclick=gbar.qs(this) class=gb2&gt;YouTube&lt;/a&gt; &lt;a href="http://www.google.com/calendar/render?hl=en&amp;tab=wc" class=gb2&gt;Calendar&lt;/a&gt; &lt;a href="http://picasaweb.google.com/home?hl=en&amp;tab=wq" onclick=gbar.qs(this) class=gb2&gt;Photos&lt;/a&gt; &lt;a href="http://docs.google.com/?hl=en&amp;tab=wo" class=gb2&gt;Documents&lt;/a&gt; &lt;a href="http://www.google.com/reader/?hl=en&amp;tab=wy" class=gb2&gt;Reader&lt;/a&gt; &lt;a href="http://sites.google.com/?hl=en&amp;tab=w3" class=gb2&gt;Sites&lt;/a&gt; &lt;a href="http://groups.google.com/grphp?hl=en&amp;tab=wg" onclick=gbar.qs(this) class=gb2&gt;Groups&lt;/a&gt; &lt;div class=gb2&gt;&lt;div class=gbd&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href="http://www.google.com/intl/en/options/" class=gb2&gt;even more &amp;raquo;&lt;/a&gt; &lt;/div&gt;&lt;/nobr&gt;&lt;/div&gt;&lt;div id=guser width=100% style="visibility:hidden"&gt;&lt;nobr&gt;&lt;span id=gbn class=gbi&gt;&lt;/span&gt;&lt;span id=gbf class=gbf&gt;&lt;/span&gt;&lt;span id=gbe&gt;&lt;a href="http://www.google.com/url?sa=p&amp;pref=ig&amp;pval=3&amp;q=http://www.google.com/ig%3Fhost%3Dwww.google.com%26hl%3Den%26source%3Diglk&amp;usg=AFQjCNFdoYpGubcS3zCdY-soaKNUlYzc0Q" class=gb4&gt;iGoogle&lt;/a&gt; | &lt;/span&gt;&lt;a href="http://www.google.com/preferences?hl=en" class=gb4&gt;Search settings&lt;/a&gt; | &lt;a href="https://www.google.com/accounts/Login?hl=en&amp;continue=http://www.google.com/webhp%3Fhost%3Dwww.google.com" class=gb4&gt;Sign in&lt;/a&gt;&lt;/nobr&gt;&lt;/div&gt;&lt;div class=gbh style="left:0; visibility:hidden"&gt;&lt;/div&gt;&lt;div class=gbh style="visibility:hidden;right:0"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;center&gt;&lt;span id=body&gt;&lt;center&gt;&lt;br clear=all id=lgpd&gt;&lt;div id=lga&gt;&lt;a href="http://www.google.com/search?q=PAC-MAN+30th+Anniversary&amp;ct=pacman10-hp&amp;oi=ddle" id="dlink"&gt;&lt;/a&gt;&lt;div id=logo title="PAC-MAN's 30th Birthday! Doodle with PAC-MAN™ &amp; ©1980 NAMCO BANDAI Games Inc."&gt;&lt;div id=logo-l&gt;&lt;div id=logo-b&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;if(!window.google)window.google={};
+if(!window.gbar||!gbar.close){window.gbar={};(function(){var e=window.gbar,i,k,l;function m(a){var b=window.encodeURIComponent&amp;&amp;(document.forms[0].q||"").value;if(b)a.href=a.href.replace(/([?&amp;])q=[^&amp;]*|$/,function(d,c){return(c||"&amp;")+"q="+encodeURIComponent(b)})}e.qs=m;function n(a,b,d,c,f,g){var h=document.getElementById(a);if(h){var j=h.style;j.left=c?"auto":b+"px";j.right=c?b+"px":"auto";j.top=d+"px";j.visibility=k?"hidden":"visible";if(f&amp;&amp;g){j.width=f+"px";j.height=g+"px"}else{n(i,b,d,c,h.offsetWidth,h.offsetHeight);k=k?"":a}}}
+e.tg=function(a){a=a||window.event;var b,d=a.target||a.srcElement;a.cancelBubble=true;if(i!=null)o(d);else{b=document.createElement(Array.every||window.createPopup?"iframe":"div");b.frameBorder="0";i=b.id="gbs";b.src="#";document.body.appendChild(b);document.onclick=e.close;o(d);e.alld&amp;&amp;e.alld(function(){var c=document.getElementById("gbli");if(c){var f=c.parentNode;p(f,c);var g=c.prevSibling;f.removeChild(c);e.removeExtraDelimiters(f,g);b.style.height=f.offsetHeight+"px"}})}};
+function q(a){var b,d=document.defaultView;if(d&amp;&amp;d.getComputedStyle){if(a=d.getComputedStyle(a,""))b=a.direction}else b=a.currentStyle?a.currentStyle.direction:a.style.direction;return b=="rtl"}
+function o(a){var b=0;if(a.className!="gb3")a=a.parentNode;var d=a.getAttribute("aria-owns")||"gbi",c=a.offsetWidth,f=a.offsetTop&gt;20?46:24;if(document.getElementById("tphdr"))f-=3;var g=false;do b+=a.offsetLeft||0;while(a=a.offsetParent);a=(document.documentElement.clientWidth||document.body.clientWidth)-b-c;c=q(document.body);if(d=="gbi"){var h=document.getElementById("gbi");p(h,document.getElementById("gbli")||h.firstChild);if(c){b=a;g=true}}else if(!c){b=a;g=true}k!=d&amp;&amp;e.close();n(d,b,f,g)}
+e.close=function(){k&amp;&amp;n(k,0,0)};function r(a,b,d){if(!l){l="gb2";if(e.alld){var c=e.findClassName(a);if(c)l=c}}a.insertBefore(b,d).className=l}function p(a,b){for(var d,c=window.navExtra;c&amp;&amp;(d=c.pop());)r(a,d,b)};
+})();;};
+(function(){var a=window,b=google,e=document,f="getElementById";function h(c){if(!b.pmlInstalled){b.pmlInstalled=true;if(!c){e[f]("logo").style.background="black";a.setTimeout(function(){var g=e[f]("logo-l");if(g)g.style.display="block"},400)}c=e.createElement("script");c.type="text/javascript";c.src="http://www.google.com/logos/js/pacman10-hp.4.js";(e[f]("xjsc")||e.body).appendChild(c)}}function i(){if(e.f&amp;&amp;e.f.btnI)e.f.btnI.onclick=function(){if(typeof b.pacman!="undefined")b.pacman.insertCoin();else{b.pacManSound=true;h(false)}return false}}b.pml=function(){if(!b.pmlLoaded){b.pmlLoaded=true;a.setTimeout(function(){e.f&amp;&amp;e.f.q&amp;&amp;e.f.q.value==""&amp;&amp;h(true)},5E3);a.setTimeout(i,0);b.rein&amp;&amp;b.rein.push(i);b.dstr&amp;&amp;b.dstr.push(function(){b.pacman&amp;&amp;b.pacman.destroy();if(b.pmlInstalled){for(var c=(e[f]("xjsc")||e.body).getElementsByTagName("script"),g=0,d;d=c[g++];)d.src.indexOf("http://www.google.com/logos/js/pacman10-hp.4.js")!=-1&amp;&amp;d&amp;&amp;d.parentNode&amp;&amp;d.parentNode.removeChild(d);b.pmlInstalled=false}})}};b.pml();b.pacManQuery=function(){a.location.href="/search?q=pacman+30th+anniversary&amp;ct=pacman10-hp&amp;oi=ddle"};})();&lt;/script&gt;&lt;/div&gt;&lt;form action="http://www.google.com/search" name=f&gt;&lt;table cellpadding=0 cellspacing=0&gt;&lt;tr valign=top&gt;&lt;td width=25%&gt;&amp;nbsp;&lt;/td&gt;&lt;td align=center nowrap&gt;&lt;input name=hl type=hidden value=en&gt;&lt;input name=source type=hidden value=hp&gt;&lt;input type=hidden name=host value="www.google.com"&gt;&lt;div class=ds style="visibility: hidden;height:32px;margin:4px 0"&gt;&lt;input autocomplete="off" maxlength=2048 name=q class=lst title="Google Search" value="" size=57 style="visibility: hidden"&gt;&lt;/div&gt;&lt;br style="line-height:0"&gt;&lt;span style="visibility: hidden" class=ds&gt;&lt;span class=lsbb&gt;&lt;input style="visibility: hidden" name=btnG type=submit value="Google Search" class=lsb onclick="this.checked=1"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="visibility: hidden" class=ds&gt;&lt;span class=lsbb&gt;&lt;input style="visibility: hidden" name=btnI type=submit value="Insert Coin" class=lsb onclick="this.checked=1"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td nowrap width=25% align=left class=sblc id=sbl&gt;&lt;a style="visibility: hidden" href="http://www.google.com/advanced_search?hl=en"&gt;Advanced Search&lt;/a&gt;&lt;a style="visibility: hidden" href="http://www.google.com/language_tools?hl=en"&gt;Language Tools&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/form&gt;&lt;font size=-1&gt;&lt;div style="visibility: hidden"&gt;&lt;a href="/services/hp/index.html#utm_campaign=dhp&amp;utm_medium=et&amp;utm_source=logos-sidebar"&gt;&lt;img src="/images/mgyhp_sm.png" width=14 height=14 style=vertical-align:middle;margin-right:5px border=0&gt;&lt;/a&gt;&lt;a href="/services/hp/index.html#utm_campaign=dhp&amp;utm_medium=et&amp;utm_source=logos-sidebar"&gt;Make Google your homepage&lt;/a&gt;&lt;/div&gt;&lt;/font&gt;&lt;div style="font-size:83%;min-height:3.5em"&gt;&lt;/div&gt;&lt;div id=res&gt;&lt;/div&gt;&lt;/center&gt;&lt;/span&gt;&lt;span id=footer&gt;&lt;center id=fctr&gt;&lt;div style="font-size:10pt; visibility: hidden"&gt;&lt;div id=fll style="visibility: hidden; margin:19px auto 19px auto;text-align:center"&gt;&lt;a href="http://www.google.com/intl/en/ads/"&gt;Advertising&amp;nbsp;Programs&lt;/a&gt;&lt;a href="http://www.google.com/services/"&gt;Business Solutions&lt;/a&gt;&lt;a href="http://www.google.com/intl/en/about.html"&gt;About Google&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;p style="color:#767676;font-size:8pt; visibility: hidden"&gt;&amp;copy;2011 - &lt;a href="http://www.google.com/intl/en/privacy.html"&gt;Privacy&lt;/a&gt;&lt;/p&gt;&lt;/center&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;</value>
+  </data>
+</root>
