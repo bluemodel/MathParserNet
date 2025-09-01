@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using MathParserNet.Exceptions;
 
@@ -354,7 +355,7 @@ namespace MathParserNet
             if (retval.ReturnType == SimplificationReturnValue.ReturnTypes.Float)
                 return retval.DoubleValue;
 
-            return double.Parse(retval.IntValue.ToString());
+            return double.Parse(retval.IntValue.ToString(NumberFormatInfo.InvariantInfo), NumberFormatInfo.InvariantInfo);
         }
 
         public SimplificationReturnValue Simplify(string equation)
@@ -404,10 +405,10 @@ namespace MathParserNet
                     switch (rv.ReturnType)
                     {
                         case SimplificationReturnValue.ReturnTypes.Integer:
-                            token.TokenValue = Math.Sqrt(rv.IntValue).ToString();
+                            token.TokenValue = Math.Sqrt(rv.IntValue).ToString(NumberFormatInfo.InvariantInfo);
                             break;
                         case SimplificationReturnValue.ReturnTypes.Float:
-                            token.TokenValue = Math.Sqrt(rv.DoubleValue).ToString();
+                            token.TokenValue = Math.Sqrt(rv.DoubleValue).ToString(NumberFormatInfo.InvariantInfo);
                             break;
                     }
                 }
@@ -427,10 +428,10 @@ namespace MathParserNet
                     switch (rv.ReturnType)
                     {
                         case SimplificationReturnValue.ReturnTypes.Integer:
-                            token.TokenValue = Math.Sin(rv.IntValue).ToString();
+                            token.TokenValue = Math.Sin(rv.IntValue).ToString(NumberFormatInfo.InvariantInfo);
                             break;
                         case SimplificationReturnValue.ReturnTypes.Float:
-                            token.TokenValue = Math.Sin(rv.DoubleValue).ToString();
+                            token.TokenValue = Math.Sin(rv.DoubleValue).ToString(NumberFormatInfo.InvariantInfo);
                             break;
                     }
                 }
@@ -450,10 +451,10 @@ namespace MathParserNet
                     switch (rv.ReturnType)
                     {
                         case SimplificationReturnValue.ReturnTypes.Integer:
-                            token.TokenValue = Math.Log(rv.IntValue, 10).ToString();
+                            token.TokenValue = Math.Log(rv.IntValue, 10).ToString(NumberFormatInfo.InvariantInfo);
                             break;
                         case SimplificationReturnValue.ReturnTypes.Float:
-                            token.TokenValue = Math.Log(rv.DoubleValue, 10).ToString();
+                            token.TokenValue = Math.Log(rv.DoubleValue, 10).ToString(NumberFormatInfo.InvariantInfo);
                             break;
                     }
                 }
@@ -473,10 +474,10 @@ namespace MathParserNet
                     switch (rv.ReturnType)
                     {
                         case SimplificationReturnValue.ReturnTypes.Integer:
-                            token.TokenValue = Math.Log(rv.IntValue).ToString();
+                            token.TokenValue = Math.Log(rv.IntValue).ToString(NumberFormatInfo.InvariantInfo);
                             break;
                         case SimplificationReturnValue.ReturnTypes.Float:
-                            token.TokenValue = Math.Log(rv.DoubleValue).ToString();
+                            token.TokenValue = Math.Log(rv.DoubleValue).ToString(NumberFormatInfo.InvariantInfo);
                             break;
                     }
                 }
@@ -496,10 +497,10 @@ namespace MathParserNet
                     switch (rv.ReturnType)
                     {
                         case SimplificationReturnValue.ReturnTypes.Integer:
-                            token.TokenValue = Math.Tan(rv.IntValue).ToString();
+                            token.TokenValue = Math.Tan(rv.IntValue).ToString(NumberFormatInfo.InvariantInfo);
                             break;
                         case SimplificationReturnValue.ReturnTypes.Float:
-                            token.TokenValue = Math.Tan(rv.DoubleValue).ToString();
+                            token.TokenValue = Math.Tan(rv.DoubleValue).ToString(NumberFormatInfo.InvariantInfo);
                             break;
                     }
                 }
@@ -519,10 +520,10 @@ namespace MathParserNet
                     switch (rv.ReturnType)
                     {
                         case SimplificationReturnValue.ReturnTypes.Integer:
-                            token.TokenValue = Math.Abs(rv.IntValue).ToString();
+                            token.TokenValue = Math.Abs(rv.IntValue).ToString(NumberFormatInfo.InvariantInfo);
                             break;
                         case SimplificationReturnValue.ReturnTypes.Float:
-                            token.TokenValue = Math.Abs(rv.DoubleValue).ToString();
+                            token.TokenValue = Math.Abs(rv.DoubleValue).ToString(NumberFormatInfo.InvariantInfo);
                             break;
                     }
                 }
@@ -542,10 +543,10 @@ namespace MathParserNet
                     switch (rv.ReturnType)
                     {
                         case SimplificationReturnValue.ReturnTypes.Integer:
-                            token.TokenValue = Math.Cos(rv.IntValue).ToString();
+                            token.TokenValue = Math.Cos(rv.IntValue).ToString(NumberFormatInfo.InvariantInfo);
                             break;
                         case SimplificationReturnValue.ReturnTypes.Float:
-                            token.TokenValue = Math.Cos(rv.DoubleValue).ToString();
+                            token.TokenValue = Math.Cos(rv.DoubleValue).ToString(NumberFormatInfo.InvariantInfo);
                             break;
                     }
                 }
@@ -617,12 +618,12 @@ namespace MathParserNet
 
                                 if (funcRetval is double)
                                 {
-                                    token.TokenValue = ((double)funcRetval).ToString();
+                                    token.TokenValue = ((double)funcRetval).ToString(NumberFormatInfo.InvariantInfo);
                                     token.TokenName = TokenParser.Tokens.Float;
                                 }
                                 if (funcRetval is int)
                                 {
-                                    token.TokenValue = ((int)funcRetval).ToString();
+                                    token.TokenValue = ((int)funcRetval).ToString(NumberFormatInfo.InvariantInfo);
                                     token.TokenName = TokenParser.Tokens.Integer;
                                 }
                                 if (funcRetval is SimplificationReturnValue)
@@ -630,12 +631,12 @@ namespace MathParserNet
                                     var srv = (SimplificationReturnValue)funcRetval;
                                     if (srv.ReturnType == SimplificationReturnValue.ReturnTypes.Integer)
                                     {
-                                        token.TokenValue = srv.IntValue.ToString();
+                                        token.TokenValue = srv.IntValue.ToString(NumberFormatInfo.InvariantInfo);
                                         token.TokenName = TokenParser.Tokens.Integer;
                                     }
                                     if (srv.ReturnType == SimplificationReturnValue.ReturnTypes.Float)
                                     {
-                                        token.TokenValue = srv.DoubleValue.ToString();
+                                        token.TokenValue = srv.DoubleValue.ToString(NumberFormatInfo.InvariantInfo);
                                         token.TokenName = TokenParser.Tokens.Float;
                                     }
                                 }
@@ -729,12 +730,12 @@ namespace MathParserNet
                         if (sretval != null && sretval.ReturnType == SimplificationReturnValue.ReturnTypes.Integer)
                         {
                             token.TokenName = TokenParser.Tokens.Integer;
-                            token.TokenValue = sretval.IntValue.ToString();
+                            token.TokenValue = sretval.IntValue.ToString(NumberFormatInfo.InvariantInfo);
                         }
                         if (sretval != null && sretval.ReturnType == SimplificationReturnValue.ReturnTypes.Float)
                         {
                             token.TokenName = TokenParser.Tokens.Float;
-                            token.TokenValue = sretval.DoubleValue.ToString();
+                            token.TokenValue = sretval.DoubleValue.ToString(NumberFormatInfo.InvariantInfo);
                         }
                     }
                 }
@@ -748,12 +749,12 @@ namespace MathParserNet
                         if (z.NumberType == NumberClass.NumberTypes.Float)
                         {
                             token.TokenName = TokenParser.Tokens.Float;
-                            token.TokenValue = z.FloatNumber.ToString();
+                            token.TokenValue = z.FloatNumber.ToString(NumberFormatInfo.InvariantInfo);
                         }
                         else if (z.NumberType == NumberClass.NumberTypes.Integer)
                         {
                             token.TokenName = TokenParser.Tokens.Integer;
-                            token.TokenValue = z.IntNumber.ToString();
+                            token.TokenValue = z.IntNumber.ToString(NumberFormatInfo.InvariantInfo);
                         }
                     }
                     else
@@ -775,11 +776,11 @@ namespace MathParserNet
                     {
                         case TokenParser.Tokens.Float:
                             nc.NumberType = NumberClass.NumberTypes.Float;
-                            nc.FloatNumber = double.Parse(token.TokenValue);
+                            nc.FloatNumber = double.Parse(token.TokenValue, NumberFormatInfo.InvariantInfo);
                             break;
                         case TokenParser.Tokens.Integer:
                             nc.NumberType = NumberClass.NumberTypes.Integer;
-                            nc.IntNumber = int.Parse(token.TokenValue);
+                            nc.IntNumber = int.Parse(token.TokenValue, NumberFormatInfo.InvariantInfo);
                             break;
                     }
                     _outputQueue.Enqueue(nc);

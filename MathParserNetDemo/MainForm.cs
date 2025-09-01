@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -175,7 +176,7 @@ namespace MathParserNetDemo
             }
 
             txtAnswer.Text = retval.ReturnType == MathParserNet.SimplificationReturnValue.ReturnTypes.Float ?
-                retval.DoubleValue.ToString() : retval.IntValue.ToString();
+                retval.DoubleValue.ToString(NumberFormatInfo.InvariantInfo) : retval.IntValue.ToString();
         }
 
         private void BtnAddFunctionClick(object sender, EventArgs e)
