@@ -7,10 +7,12 @@
 A while back, I wrote an article on CodeProject called [TokenIcer](https://www.codeproject.com/Articles/274093/TokenIcer.aspx). TokenIcer was a program that would automatically create a lexical parser in either C# or VB.NET, based on RegEx rules created in the program.
 
 Since the time that I wrote the article, I have gotten some very good feedback and I wanted to take it a step further. I decided to use TokenIcer to create a mathematical equation parser. That math parser is presented here in this article and it is called Math Parser .NET. It is a .NET Class Library project that can be used with your own programs.
-Background
+
+# Background
 
 There are several math parsers that exist already. The goal of my math parser is to keep it as simple to use and operate as possible. One of my biggest pet peeves is when a good library goes "bad" because its simplicity gets overshadowed by its own feature list. I feel that my math parser does its job well while keeping the basic functionality and usage simple.
-Using the Code
+
+# Using the Code
 
 Before I go into how to use the library, I would like to first go through how the internals of the library work. The library itself first consists of a lexical analyzer. The lexical analyzer, I created automatically, by using TokenIcer. The lexical analyzer will take an input string like this:
 
@@ -254,4 +256,5 @@ I have included a unit test project for testing out the math parsing library. Al
 # History
 
 * 10/30/2011 -- Version 1.1 released. This version now throws exceptions instead of returning values, in the case of an error. In addition, delegate methods have been introduced into this version. Also, the SimplifyInt and SimplifyDouble methods have been created. In addition, I have created a true unit testing project for the Math library and a demo application. Thanks for all the feedback and keep it coming guys!
+
 * 10/26/2011 -- Initial version released.
