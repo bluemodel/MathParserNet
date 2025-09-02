@@ -131,20 +131,20 @@ Anytime you use any of the simplify functions, you should always wrap it in a tr
 
 The parser can parse the following things:
 
-* () -- Parenthesis
-* + -- Add symbol (3 + 2)
-* - -- Subtract symbol (3 - 2)
-* * -- Multiplication symbol (3 * 2)
-* / -- Divide symbol (3 / 2)
-* % -- Modulus symbol (3 % 2)(divides the two numbers, but returns the remainder)
-* ^ -- Exponent symbol (3 ^ 2)(squares 3)
-* ABS -- Function returns the absolute of a number (ABS(-3))
-* SIN -- Returns the sine of a number (SIN(3.14))
-* COS -- Returns the cosine of a number (COS(3.14))
-* TAN -- Returns the tangent of a number (TAN(3.14))
-* LOG -- Returns the base 10 logarithm of a number
-* LOGN -- Returns the natural logarithm of a number
-* func<name> -- Calls a user defined function (see Functions below)
+* `()` -- Parenthesis
+* `+` -- Add symbol (3 + 2)
+* `-` -- Subtract symbol (3 - 2)
+* `*` -- Multiplication symbol (3 * 2)
+* `/` -- Divide symbol (3 / 2)
+* `%` -- Modulus symbol (3 % 2)(divides the two numbers, but returns the remainder)
+* `^` -- Exponent symbol (3 ^ 2)(squares 3)
+* `ABS` -- Function returns the absolute of a number (ABS(-3))
+* `SIN` -- Returns the sine of a number (SIN(3.14))
+* `COS` -- Returns the cosine of a number (COS(3.14))
+* `TAN` -- Returns the tangent of a number (TAN(3.14))
+* `LOG` -- Returns the base 10 logarithm of a number
+* `LOGN` -- Returns the natural logarithm of a number
+* `func<name>` -- Calls a user defined function (see Functions below)
 
 # Variables
 
@@ -258,3 +258,4 @@ I have included a unit test project for testing out the math parsing library. Al
 * 10/30/2011 -- Version 1.1 released. This version now throws exceptions instead of returning values, in the case of an error. In addition, delegate methods have been introduced into this version. Also, the SimplifyInt and SimplifyDouble methods have been created. In addition, I have created a true unit testing project for the Math library and a demo application. Thanks for all the feedback and keep it coming guys!
 
 * 10/26/2011 -- Initial version released.
+
