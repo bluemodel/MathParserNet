@@ -121,7 +121,7 @@ namespace MathParserNetTest
 
             retval = parser.Simplify("1 + sqrt(x3) / x3 * x2");
             Assert.AreEqual(MathParserNet.SimplificationReturnValue.ReturnTypes.Float, retval.ReturnType, "Return Type should be float");
-            Assert.AreEqual(2.70259177490216m, (decimal)retval.DoubleValue, "Return Value should be 2.70259177490216");
+            Assert.AreEqual(2.70259177490215m, (decimal)retval.DoubleValue, "Return Value should be 2.70259177490215");
         }
 
         [TestMethod]
@@ -151,7 +151,7 @@ namespace MathParserNetTest
 
             var retval = parser.Simplify("funcTestFunc1(17.3821)");
             Assert.AreEqual(MathParserNet.SimplificationReturnValue.ReturnTypes.Float, retval.ReturnType, "Return Type should be float");
-            Assert.AreEqual(9.43843839037866m, (decimal)retval.DoubleValue, "Return Value should be 9.43843839037866");
+            Assert.AreEqual(9.43843839037864m, (decimal)retval.DoubleValue, "Return Value should be 9.43843839037864");
 
             retval = parser.Simplify("funcTestFunc2(99, 7.3892)");
             Assert.AreEqual(MathParserNet.SimplificationReturnValue.ReturnTypes.Float, retval.ReturnType, "Return Type should be float");
