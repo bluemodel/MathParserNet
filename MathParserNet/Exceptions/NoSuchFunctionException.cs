@@ -24,10 +24,5 @@ namespace MathParserNet.Exceptions
 
         }
 
-        protected NoSuchFunctionException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-
-        }
     }
 }
