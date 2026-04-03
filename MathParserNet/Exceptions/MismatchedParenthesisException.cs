@@ -23,10 +23,5 @@ namespace MathParserNet.Exceptions
 
         }
 
-        protected MismatchedParenthesisException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-
-        }
     }
 }

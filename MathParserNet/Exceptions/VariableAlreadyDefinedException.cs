@@ -24,10 +24,5 @@ namespace MathParserNet.Exceptions
 
         }
 
-        protected VariableAlreadyDefinedException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-
-        }
     }
 }

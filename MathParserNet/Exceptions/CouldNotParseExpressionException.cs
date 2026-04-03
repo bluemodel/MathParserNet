@@ -24,10 +24,5 @@ namespace MathParserNet.Exceptions
 
         }
 
-        protected CouldNotParseExpressionException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-
-        }
     }
 }
