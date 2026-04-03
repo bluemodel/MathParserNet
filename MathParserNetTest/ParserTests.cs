@@ -208,6 +208,10 @@ namespace MathParserNetTest
             parser.RegisterCustomIntegerFunction("Doubler", Doubler);
             parser.RegisterCustomDoubleFunction("AreaCircle", AreaCircle);
             var retval = parser.Simplify("AreaCircle(Doubler(3.2))");
+            // Note that the answer may NOT be what you expect. What is happening
+            // is that Doubler was defined as an integer function and therefore,
+            // when you double 3.2, you might expect 6.4, but whats happening is that
+            // the integer Doubler function is truncating and returning just 6
             Assert.AreEqual(MathParserNet.SimplificationReturnValue.ReturnTypes.Float, retval.ReturnType, "Return Type should be Float");
             Assert.AreEqual(113.097335529233m, (decimal)retval.DoubleValue, "Return Value should be 113.097335529233");
         }
