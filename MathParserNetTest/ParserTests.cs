@@ -79,7 +79,7 @@ namespace MathParserNetTest
             }
             catch (Exception ex)
             {
-                Assert.IsInstanceOfType(ex, typeof(MathParserNet.Exceptions.NoSuchVariableException), "Expected an Exception of type NoSuchVariableException");
+                Assert.IsInstanceOfType<MathParserNet.Exceptions.NoSuchVariableException>(ex, "Expected an Exception of type NoSuchVariableException");
             }
         }
 
@@ -96,7 +96,7 @@ namespace MathParserNetTest
             }
             catch (Exception ex)
             {
-                Assert.IsInstanceOfType(ex, typeof(MathParserNet.Exceptions.MismatchedParenthesisException), "Expected an Exception of type MismatchedParenthesisException");
+                Assert.IsInstanceOfType<MathParserNet.Exceptions.MismatchedParenthesisException>(ex, "Expected an Exception of type MismatchedParenthesisException");
             }
         }
 
@@ -134,7 +134,7 @@ namespace MathParserNetTest
             }
             catch (Exception ex)
             {
-                Assert.IsInstanceOfType(ex, typeof(MathParserNet.Exceptions.NoSuchFunctionException), "Expected a NoSuchFunctionException");
+                Assert.IsInstanceOfType<MathParserNet.Exceptions.NoSuchFunctionException>(ex, "Expected a NoSuchFunctionException");
             }
         }
 
@@ -166,7 +166,7 @@ namespace MathParserNetTest
             }
             catch (Exception ex)
             {
-                Assert.IsInstanceOfType(ex, typeof(MathParserNet.Exceptions.NoSuchFunctionException), "Expected NoSuchFunctionException");
+                Assert.IsInstanceOfType<MathParserNet.Exceptions.NoSuchFunctionException>(ex, "Expected NoSuchFunctionException");
             }
         }
 
@@ -188,7 +188,7 @@ namespace MathParserNetTest
             }
             catch (Exception ex)
             {
-                Assert.IsInstanceOfType(ex, typeof(MathParserNet.Exceptions.NoSuchVariableException), "Expected NoSuchVariableException");
+                Assert.IsInstanceOfType<MathParserNet.Exceptions.NoSuchVariableException>(ex, "Expected NoSuchVariableException");
             }
         }
 
